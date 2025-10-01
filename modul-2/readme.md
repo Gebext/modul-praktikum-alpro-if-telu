@@ -210,8 +210,6 @@ f(x) = \frac{2}{x+5} + 5
 **Masukan** terdiri dari sebuah bilangan bulat.  
 **Keluaran** berupa bilangan yang menyatakan nilai dari \( f(x) \).
 
----
-
 #### 📌 Contoh Masukan dan Keluaran
 
 | No  | Masukan | Keluaran             |

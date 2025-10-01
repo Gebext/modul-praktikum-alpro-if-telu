@@ -1,25 +1,24 @@
 # MODUL 3. I/O, TIPE DATA & VARIABEL (LATIHAN 1)
 
-Modul ini merupakan kelanjutan dari Modul 2.  
-Fokus dari Modul 3 adalah pendalaman materi dari Modul 2.  
-Materi di modul ini bersifat tambahan dan dibahas secara khusus, tetapi bukan menjadi materi utama.  
-Soal yang diberikan tetap seputar input/output, tipe data, dan variabel.
+Modul ini merupakan kelanjutan dari modul sebelumnya. Fokus dari Modul 3 adalah pendalaman materi dari Modul 2.  
+Materi di modul ini bersifat tambahan dan dibahas secara khusus, tetapi bukan menjadi materi utama untuk soal-soal di modul ini.  
+Soal yang diberikan tetap serupa dengan modul sebelumnya, yaitu seputar input/output, tipe data, dan variabel.
 
 ---
 
 ## 3.1 Integer Division (Div) dan Modulo (Mod)
 
-Pembagian pada tipe data integer (integer division atau `div`) berbeda dengan pembagian biasa:
+Pembagian pada tipe data integer (integer division atau div) sedikit berbeda dengan pembagian biasa.
 
-- Hasil pembagian integer akan bertipe **integer**, sehingga bagian pecahan (desimal) diabaikan.
+- Hasil pembagian integer akan bertipe integer, sehingga bagian pecahan (floating point) diabaikan.
 - Hasil pembagian integer disebut **quotient**.
 
-**Contoh:**
+Contoh:
 
 - 10 ÷ 3 = 3.333...
-- 10 div 3 = 3
+- Hasil integer division = 3
 
-### Contoh kode Go (Integer Division)
+### Contoh kode Go:
 
 ```go
 package main
@@ -31,55 +30,63 @@ func main() {
     var hasil = bil_1 / bil_2
     fmt.Println(hasil) // output: 3
 }
+```
 
 Operator Modulo
 
-Modulo (%) digunakan untuk mencari sisa pembagian.
+Modulo (atau mod) adalah operasi untuk mencari sisa pembagian pada integer division.
 
 Contoh:
 
-    10 mod 3 = 1
+10 mod 3 = 1
 
-Contoh kode Go (Modulo)
+Contoh kode Go:
 
+```go
 package main
 import "fmt"
 
 func main() {
-    var bil_1 int = 10
-    var bil_2 int = 3
-    var hasil = bil_1 % bil_2
-    fmt.Println(hasil) // output: 1
+var bil_1 int = 10
+var bil_2 int = 3
+var hasil = bil_1 % bil_2
+fmt.Println(hasil) // output: 1
 }
+```
 
-Penerapan: Mencari Digit Bilangan
+Contoh penerapan: mencari digit bilangan
 
-    Bilangan mod 10 → menghasilkan digit terakhir.
+Setiap bilangan jika di-modulus dengan 10 → menghasilkan digit terakhir.
 
-    Bilangan div 10 → menghilangkan digit terakhir.
+1234 mod 10 = 4
 
-Contoh:
+5677 mod 10 = 7
 
-    1234 mod 10 = 4
+Jika dibagi 10 (div), digit terakhir akan hilang:
 
-    5677 mod 10 = 7
+1234 div 10 = 123
 
-    1234 div 10 = 123
+5677 div 10 = 567
 
-    5677 div 10 = 567
+Contoh: X = 2357
 
-Contoh tabel digit bilangan (X = 2357)
-i	Digit ke-i	Operasi	Keterangan
-1	2	(X div 1000) mod 10	X div 1000 = 2 (tidak perlu mod)
-2	3	(X div 100) mod 10	X div 100 = 23 → mod 10 = 3
-3	5	(X div 10) mod 10	X div 10 = 235 → mod 10 = 5
-4	7	(X div 1) mod 10	X div 1 = 2357 → mod 10 = 7
-3.2 Casting (Konversi Tipe Data)
+---
 
-Di bahasa Go, tipe data bersifat statis, artinya tipe data variabel tidak bisa diubah saat program berjalan.
-Namun, kita bisa menggunakan casting untuk konversi antar tipe data.
-Contoh kode Go (Float → Int)
+| i   | Digit ke-i | Operasi             | Keterangan                       |
+| --- | ---------- | ------------------- | -------------------------------- |
+| 1   | 2          | (X div 1000) mod 10 | X div 1000 = 2 (tidak perlu mod) |
+| 2   | 3          | (X div 100) mod 10  | X div 100 = 23 → mod 10 = 3      |
+| 3   | 5          | (X div 10) mod 10   | X div 10 = 235 → mod 10 = 5      |
+| 4   | 7          | (X div 1) mod 10    | X div 1 = 2357 → mod 10 = 7      |
 
+---
+
+## 3.2 Casting atau Konversi Tipe Data
+
+Di bahasa Go, tipe data bersifat statis → tipe data variabel tidak bisa diubah saat program berjalan.
+Namun, kita bisa menggunakan casting untuk mengubah tipe data.
+
+```go
 package main
 import "fmt"
 
@@ -88,15 +95,19 @@ func main() {
     var nilai int = int(pi) // hasil: 3
     fmt.Println(nilai)
 }
+```
 
-Format Casting di Go
+Format casting di Go:
 
-var nama_variabel tipe_data = tipe_data(nilai)
+```java
+var var_name data_type = data_type(value)
+```
 
-Casting String ↔ Integer dengan strconv
+Casting string ↔ int dengan strconv
+
 1. String → Integer
 
-package main
+```go package main
 import (
     "fmt"
     "strconv"
@@ -109,9 +120,11 @@ func main() {
         fmt.Println(tahun) // output: 2024
     }
 }
+```
 
 2. Integer → String
 
+```go
 package main
 import (
     "fmt"
@@ -124,12 +137,11 @@ func main() {
     fmt.Println(teks) // output: "113071049"
 }
 
+```
+
 Ringkasan
 
-Integer Division & Modulo:
-- Digunakan untuk pembagian integer dan mencari sisa pembagian.
-
-Casting:
-- Konversi antar tipe data.
-- Contoh: float → int, string ↔ int (dengan strconv).
+```plaintext
+Integer Division & Modulo: untuk pembagian integer dan mencari sisa.
+Casting: untuk konversi antar tipe data, misalnya float → int, string ↔ int.
 ```
