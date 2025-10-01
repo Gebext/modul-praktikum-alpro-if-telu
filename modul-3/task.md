@@ -6,18 +6,10 @@
 
 Buatlah program dalam bahasa **Go** untuk menghitung nilai \(x\) dari persamaan:
 
-\[
-f(x) = \frac{2}{x + 5} + 5
-\]
+c:\Users\Gibrand\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TempState\ScreenClip\{1F06E615-A719-4A20-B02A-08B9625E0E51}.png
 
 - **Input**: Sebuah bilangan riil yang menyatakan \(f(x)\).
 - **Output**: Sebuah bilangan riil yang menyatakan nilai \(x\).
-
-Rumus kebalikan untuk mencari \(x\) dari \(f(x)\):
-
-\[
-x = \frac{2}{f(x) - 5} - 5
-\]
 
 ### Contoh Masukan dan Keluaran
 
@@ -57,7 +49,7 @@ Jejari = 5
 Bola dengan jejari 5 memiliki volume 523.5988 dan luas kulit 314.1593
 ```
 
-### 4️⃣ Memeriksa Tahun Kabisat
+### 3️⃣ Memeriksa Tahun Kabisat
 
 ## Deskripsi Soal
 
