@@ -6,18 +6,13 @@
 
 Buatlah program dalam bahasa **Go** untuk menghitung nilai \(x\) dari persamaan:
 
-\[
-f(x) = \frac{2}{x + 5} + 5
-\]
+
+f(x) = 2/(x+5) + 5
 
 - **Input**: Sebuah bilangan riil yang menyatakan \(f(x)\).
 - **Output**: Sebuah bilangan riil yang menyatakan nilai \(x\).
 
 Rumus kebalikan untuk mencari \(x\) dari \(f(x)\):
-
-\[
-x = \frac{2}{f(x) - 5} - 5
-\]
 
 ### Contoh Masukan dan Keluaran
 
