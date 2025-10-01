@@ -158,3 +158,147 @@ func main() {
 }
 
 ```
+
+## 2.5 Contoh Soal Modul 2
+
+Berikut adalah beberapa contoh soal terkait penggunaan tipe data integer, character dan operasinya.
+
+---
+
+### 1️⃣ Buatlah program yang digunakan untuk menghitung hasil penjumlahan 5 bilangan bulat.
+
+**Masukan** terdiri dari lima bilangan bulat `a`, `b`, `c`, `d`, dan `e`.  
+**Keluaran** berupa bilangan hasil penjumlahan lima bilangan bulat `a`, `b`, `c`, `d`, dan `e`.
+
+---
+
+#### 📌 Contoh Masukan dan Keluaran
+
+| No  | Masukan        | Keluaran |
+| --- | -------------- | -------- |
+| 1   | 3 2 7 10 2     | 24       |
+| 2   | 11 22 33 44 55 | 165      |
+
+---
+
+#### 💡 Jawaban:
+
+```go
+// filename: penjumlahan.go
+package main
+
+import "fmt"
+
+func main() {
+    var a, b, c, d, e int
+    var hasil int
+
+    fmt.Scanln(&a, &b, &c, &d, &e)
+    hasil = a + b + c + d + e
+
+    fmt.Println("Hasil penjumlahan", a, b, c, d, e, "adalah", hasil)
+}
+
+```
+
+### 2️⃣ Sebuah program digunakan untuk menghitung persamaan:
+
+\[
+f(x) = \frac{2}{x+5} + 5
+\]
+
+**Masukan** terdiri dari sebuah bilangan bulat.  
+**Keluaran** berupa bilangan yang menyatakan nilai dari \( f(x) \).
+
+---
+
+#### 📌 Contoh Masukan dan Keluaran
+
+| No  | Masukan | Keluaran             |
+| --- | ------- | -------------------- |
+| 1   | 5       | 5.2                  |
+| 2   | -23     | 4.888888888888888889 |
+
+---
+
+#### 💡 Jawaban:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    var x, fx float64
+    fmt.Scan(&x)
+    fx = 2/(x+5) + 5
+    fmt.Println(fx)
+}
+```
+
+### 3️⃣ Program ASCII
+
+Tipe karakter sebenarnya hanya apa yang tampak dalam tampilan. Di dalamnya tersimpan dalam bentuk biner 8 bit (**byte**) atau 32 bit (**rune**).
+
+**Tugas:**  
+Buat program ASCII yang akan:
+
+1. Membaca **5 buah data integer** dan mencetaknya dalam format karakter.
+2. Membaca **3 buah data karakter** lalu mencetak **3 buah karakter setelahnya** (berdasarkan tabel ASCII).
+
+---
+
+#### 📌 Spesifikasi
+
+- **Masukan** terdiri dari dua baris:
+  - Baris pertama: 5 buah data integer (nilai 32 s.d. 127).
+  - Baris kedua: 3 buah data karakter **berdampingan tanpa spasi**.
+- **Keluaran** terdiri dari dua baris:
+  - Baris pertama: 5 representasi karakter dari data integer.
+  - Baris kedua: 3 buah karakter hasil pergeseran +1 ASCII dari input karakter.
+
+---
+
+#### 📊 Contoh Masukan dan Keluaran
+
+| No  | Masukan           | Keluaran |
+| --- | ----------------- | -------- |
+| 1   | 66 97 103 117 115 | Bagus    |
+|     | SNO               | TOP      |
+
+---
+
+#### 💡 Catatan
+
+- Gunakan `fmt.Scanf("%c", &var)` untuk pembacaan satu karakter.
+- Gunakan `fmt.Printf("%c", var)` untuk menuliskan karakter.
+
+---
+
+#### ✅ Jawaban
+
+```go
+// filename : ascii.go
+package main
+
+import "fmt"
+
+func main() {
+    var c1, c2, c3, c4, c5 byte
+    var b1, b2, b3 byte
+
+    // Input 5 integer → langsung dibaca sebagai byte
+    fmt.Scan(&c1, &c2, &c3, &c4, &c5)
+
+    // Input 3 karakter tanpa spasi
+    fmt.Scanf("%c", &b1)
+    fmt.Scanf("%c", &b2)
+    fmt.Scanf("%c", &b3)
+
+    // Output 5 karakter hasil konversi ASCII
+    fmt.Printf("%c%c%c%c%c\n", c1, c2, c3, c4, c5)
+
+    // Output 3 karakter setelahnya
+    fmt.Printf("%c%c%c\n", b1+1, b2+1, b3+1)
+}
+```
