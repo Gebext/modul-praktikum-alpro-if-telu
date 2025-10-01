@@ -57,7 +57,7 @@ Jejari = 5
 Bola dengan jejari 5 memiliki volume 523.5988 dan luas kulit 314.1593
 ```
 
-### 2️⃣ Memeriksa Tahun Kabisat
+### 4️⃣ Memeriksa Tahun Kabisat
 
 ## Deskripsi Soal
 
@@ -79,7 +79,7 @@ Buatlah program dalam bahasa **Go** untuk memeriksa apakah sebuah tahun merupaka
 
 ---
 
-# Modul 3.3 – Contoh Soal: Konversi Temperatur
+### 4️⃣ Konversi Temperatur
 
 ## Deskripsi Soal
 
@@ -110,7 +110,7 @@ Buatlah program dalam bahasa **Go** untuk mengubah temperatur dari **Celsius** k
 ### Contoh Input/Output
 
 ```plaintext
-Temperatur Celsius: <u>50</u>
+Temperatur Celsius: 50 <-- Input Dari User
 Derajat Reamur: 40
 Derajat Fahrenheit: 122
 Derajat Kelvin: 323
