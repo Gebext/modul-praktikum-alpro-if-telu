@@ -113,3 +113,40 @@ Contoh Keluaran:
 1256.6
 
 ```
+
+### 🔹 Soal 4 — Konversi Suhu Fahrenheit ke Celcius
+
+Sebuah program digunakan untuk melakukan **konversi suhu** dari **Fahrenheit (F)** ke **Celcius (C)**  
+dengan persamaan sebagai berikut:
+
+\[
+C = \frac{5}{9} \times (F - 32)
+\]
+
+- **Masukan**: sebuah bilangan bulat yang menyatakan suhu dalam satuan Fahrenheit.
+- **Keluaran**: suhu dalam satuan Celcius.
+
+---
+
+#### 📝 Contoh Masukan & Keluaran
+
+```text
+Contoh Masukan:
+32
+
+Contoh Keluaran:
+0
+
+Contoh Masukan:
+77
+
+Contoh Keluaran:
+25
+
+Contoh Masukan:
+212
+
+Contoh Keluaran:
+100
+
+```
