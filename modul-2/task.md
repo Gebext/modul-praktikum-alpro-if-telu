@@ -81,3 +81,35 @@ IFX-48-12
 ```plaintext
 Perkenalkan saya adalah Yura, salah satu mahasiswa Prodi S1-IF dari kelas IFX-48-12 dengan NIM 1324234545.
 ```
+
+### 🔹 Soal 3 — Luas Lingkaran
+
+Sebuah program digunakan untuk menghitung **luas lingkaran** berdasarkan panjang **jari-jari**.
+
+- **Masukan**: sebuah bilangan riil yang menyatakan jari-jari lingkaran.
+- **Keluaran**: hasil perhitungan luas lingkaran.
+
+---
+
+#### 📝 Contoh Masukan & Keluaran
+
+```text
+Contoh Masukan:
+7
+
+Contoh Keluaran:
+153.9
+
+Contoh Masukan:
+14
+
+Contoh Keluaran:
+615.8
+
+Contoh Masukan:
+20
+
+Contoh Keluaran:
+1256.6
+
+```
