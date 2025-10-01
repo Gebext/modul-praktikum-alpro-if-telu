@@ -30,6 +30,7 @@ func main() {
     var hasil = bil_1 / bil_2
     fmt.Println(hasil) // output: 3
 }
+```
 
 Operator Modulo
 
@@ -37,52 +38,55 @@ Modulo (atau mod) adalah operasi untuk mencari sisa pembagian pada integer divis
 
 Contoh:
 
-    10 mod 3 = 1
+10 mod 3 = 1
 
 Contoh kode Go:
 
+```go
 package main
 import "fmt"
 
 func main() {
-    var bil_1 int = 10
-    var bil_2 int = 3
-    var hasil = bil_1 % bil_2
-    fmt.Println(hasil) // output: 1
+var bil_1 int = 10
+var bil_2 int = 3
+var hasil = bil_1 % bil_2
+fmt.Println(hasil) // output: 1
 }
-
-Hubungan Div dan Mod
-
-Rumus hubungan antara dividend, quotient, divisor, dan remainder:
-
-dividend = quotient × divisor + remainder
+```
 
 Contoh penerapan: mencari digit bilangan
 
 Setiap bilangan jika di-modulus dengan 10 → menghasilkan digit terakhir.
 
-    1234 mod 10 = 4
+1234 mod 10 = 4
 
-    5677 mod 10 = 7
+5677 mod 10 = 7
 
 Jika dibagi 10 (div), digit terakhir akan hilang:
 
-    1234 div 10 = 123
+1234 div 10 = 123
 
-    5677 div 10 = 567
+5677 div 10 = 567
 
 Contoh: X = 2357
-i	Digit ke-i	Operasi	Keterangan
-1	2	(X div 1000) mod 10	X div 1000 = 2 (tidak perlu mod)
-2	3	(X div 100) mod 10	X div 100 = 23 → mod 10 = 3
-3	5	(X div 10) mod 10	X div 10 = 235 → mod 10 = 5
-4	7	(X div 1) mod 10	X div 1 = 2357 → mod 10 = 7
-3.2 Casting atau Konversi Tipe Data
+
+---
+
+| i   | Digit ke-i | Operasi             | Keterangan                       |
+| --- | ---------- | ------------------- | -------------------------------- |
+| 1   | 2          | (X div 1000) mod 10 | X div 1000 = 2 (tidak perlu mod) |
+| 2   | 3          | (X div 100) mod 10  | X div 100 = 23 → mod 10 = 3      |
+| 3   | 5          | (X div 10) mod 10   | X div 10 = 235 → mod 10 = 5      |
+| 4   | 7          | (X div 1) mod 10    | X div 1 = 2357 → mod 10 = 7      |
+
+---
+
+## 3.2 Casting atau Konversi Tipe Data
 
 Di bahasa Go, tipe data bersifat statis → tipe data variabel tidak bisa diubah saat program berjalan.
 Namun, kita bisa menggunakan casting untuk mengubah tipe data.
-Contoh casting float → int
 
+```go
 package main
 import "fmt"
 
@@ -91,39 +95,10 @@ func main() {
     var nilai int = int(pi) // hasil: 3
     fmt.Println(nilai)
 }
+```
 
 Format casting di Go:
 
+```java
 var var_name data_type = data_type(value)
-
-Casting string ↔ int dengan strconv
-1. String → Integer
-
-package main
-import (
-    "fmt"
-    "strconv"
-)
-
-func main() {
-    var teks string = "2024"
-    tahun, err := strconv.Atoi(teks)
-    if err == nil {
-        fmt.Println(tahun) // output: 2024
-    }
-}
-
-2. Integer → String
-
-package main
-import (
-    "fmt"
-    "strconv"
-)
-
-func main() {
-    var bilangan int = 113071049
-    var teks string = strconv.Itoa(bilangan)
-    fmt.Println(teks) // output: "113071049"
-}
 ```
