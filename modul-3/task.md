@@ -78,3 +78,40 @@ Buatlah program dalam bahasa **Go** untuk memeriksa apakah sebuah tahun merupaka
 | 3   | 2018        | false            |
 
 ---
+
+# Modul 3.3 – Contoh Soal: Konversi Temperatur
+
+## Deskripsi Soal
+
+Buatlah program dalam bahasa **Go** untuk mengubah temperatur dari **Celsius** ke:
+
+- Reamur (°R)
+- Fahrenheit (°F)
+- Kelvin (K)
+
+### Rumus Konversi
+
+- Fahrenheit:  
+  \[
+  F = C \times \frac{9}{5} + 32
+  \]
+- Reamur:  
+  \[
+  R = C \times \frac{4}{5}
+  \]
+- Kelvin:  
+  \[
+  K = C + 273
+  \]
+
+- **Input**: Bilangan riil (temperatur dalam Celsius)
+- **Output**: Temperatur dalam Reamur, Fahrenheit, dan Kelvin
+
+### Contoh Input/Output
+
+```plaintext
+Temperatur Celsius: <u>50</u>
+Derajat Reamur: 40
+Derajat Fahrenheit: 122
+Derajat Kelvin: 323
+```
