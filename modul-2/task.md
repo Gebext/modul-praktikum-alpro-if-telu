@@ -54,31 +54,6 @@ func main() {
 
 ---
 
-#### 📄 Program:
-
-```go
-// filename: biodata.go
-package main
-
-import "fmt"
-
-func main() {
-    var nama, nim, kelas string
-
-    fmt.Print("Masukkan Nama: ")
-    fmt.Scanln(&nama)
-
-    fmt.Print("Masukkan NIM: ")
-    fmt.Scanln(&nim)
-
-    fmt.Print("Masukkan Kelas: ")
-    fmt.Scanln(&kelas)
-
-    fmt.Println("Perkenalkan saya adalah", nama,
-        ", salah satu mahasiswa Prodi S1-IF dari kelas", kelas,
-        "dengan NIM", nim, ".")
-}
-
 ```
 
 #### 📌 Contoh Masukan & Keluaran
@@ -87,3 +62,4 @@ func main() {
 | --- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | 1   | Nama: `Bima`<br>NIM: `1124431414`<br>Kelas: `IF-48-GAB` | Perkenalkan saya adalah Bima, salah satu mahasiswa Prodi S1-IF dari kelas IF-48-GAB dengan NIM 1124431414. |
 | 2   | Nama: `Yura`<br>NIM: `1324234545`<br>Kelas: `IFX-48-12` | Perkenalkan saya adalah Yura, salah satu mahasiswa Prodi S1-IF dari kelas IFX-48-12 dengan NIM 1324234545. |
+```
