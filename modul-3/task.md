@@ -28,23 +28,6 @@ x = \frac{2}{f(x) - 5} - 5
 
 ---
 
-## Jawaban (Kode Go)
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-    var fx, x float64
-    fmt.Print("Masukkan nilai f(x): ")
-    fmt.Scan(&fx)
-
-    x = 2/(fx - 5) - 5
-    fmt.Println("Nilai x:", x)
-}
-```
-
 ### 2️⃣ Menghitung Volume dan Luas Permukaan Bola
 
 ## Deskripsi Soal
@@ -73,3 +56,25 @@ Gunakan \(\pi \approx 3.1415926535\).
 Jejari = 5
 Bola dengan jejari 5 memiliki volume 523.5988 dan luas kulit 314.1593
 ```
+
+### 2️⃣ Memeriksa Tahun Kabisat
+
+## Deskripsi Soal
+
+Buatlah program dalam bahasa **Go** untuk memeriksa apakah sebuah tahun merupakan **tahun kabisat**.
+
+- **Syarat tahun kabisat**:
+  1. Tahun habis dibagi 400, atau
+  2. Tahun habis dibagi 4 tetapi **tidak habis dibagi 100**.
+- **Input**: Sebuah bilangan bulat (tahun)
+- **Output**: `true` jika tahun kabisat, `false` jika bukan
+
+### Contoh Input/Output
+
+| No  | Input Tahun | Keluaran Kabisat |
+| --- | ----------- | ---------------- |
+| 1   | 2016        | true             |
+| 2   | 2000        | true             |
+| 3   | 2018        | false            |
+
+---
