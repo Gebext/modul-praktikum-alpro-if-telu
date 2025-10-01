@@ -1,4 +1,4 @@
-## Soal Latihan Modul 2
+## Soal Latihan Modul 3
 
 ### 1️⃣ Menghitung Nilai x dari Persamaan f(x)
 
@@ -6,18 +6,10 @@
 
 Buatlah program dalam bahasa **Go** untuk menghitung nilai \(x\) dari persamaan:
 
-\[
-f(x) = \frac{2}{x + 5} + 5
-\]
+f(x) = 2/(x+5) + 5
 
 - **Input**: Sebuah bilangan riil yang menyatakan \(f(x)\).
 - **Output**: Sebuah bilangan riil yang menyatakan nilai \(x\).
-
-Rumus kebalikan untuk mencari \(x\) dari \(f(x)\):
-
-\[
-x = \frac{2}{f(x) - 5} - 5
-\]
 
 ### Contoh Masukan dan Keluaran
 
@@ -33,19 +25,6 @@ x = \frac{2}{f(x) - 5} - 5
 ## Deskripsi Soal
 
 Buatlah program dalam bahasa **Go** untuk menghitung **volume** dan **luas permukaan (kulit)** bola berdasarkan jari-jari.
-
-Rumus:
-
-- **Volume bola**:  
-  \[
-  V = \frac{4}{3} \pi r^3
-  \]
-- **Luas permukaan bola**:  
-  \[
-  A = 4 \pi r^2
-  \]
-
-Gunakan \(\pi \approx 3.1415926535\).
 
 - **Input**: Bilangan bulat (jari-jari bola)
 - **Output**: Volume dan luas permukaan bola (bilangan desimal)
@@ -88,21 +67,6 @@ Buatlah program dalam bahasa **Go** untuk mengubah temperatur dari **Celsius** k
 - Reamur (°R)
 - Fahrenheit (°F)
 - Kelvin (K)
-
-### Rumus Konversi
-
-- Fahrenheit:  
-  \[
-  F = C \times \frac{9}{5} + 32
-  \]
-- Reamur:  
-  \[
-  R = C \times \frac{4}{5}
-  \]
-- Kelvin:  
-  \[
-  K = C + 273
-  \]
 
 - **Input**: Bilangan riil (temperatur dalam Celsius)
 - **Output**: Temperatur dalam Reamur, Fahrenheit, dan Kelvin
