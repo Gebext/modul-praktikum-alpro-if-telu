@@ -119,9 +119,7 @@ Contoh Keluaran:
 Sebuah program digunakan untuk melakukan **konversi suhu** dari **Fahrenheit (F)** ke **Celcius (C)**  
 dengan persamaan sebagai berikut:
 
-\[
-C = \frac{5}{9} \times (F - 32)
-\]
+C = (5/9) × (F - 32)
 
 - **Masukan**: sebuah bilangan bulat yang menyatakan suhu dalam satuan Fahrenheit.
 - **Keluaran**: suhu dalam satuan Celcius.
