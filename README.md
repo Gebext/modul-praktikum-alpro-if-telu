@@ -37,16 +37,6 @@ Modul ini bertujuan untuk membantu mahasiswa atau praktikan:
 
 ---
 
-## Struktur Repository
-
-├── Modul-01/
-│ ├── materi.md
-│ ├── latihan/
-│ │ └── latihan1.go
-├── Modul-02/
-│ └── ...
-├── README.md
-
 
 Setiap modul berisi materi, contoh soal, dan folder latihan untuk kode GoLang.
 
@@ -54,4 +44,4 @@ Setiap modul berisi materi, contoh soal, dan folder latihan untuk kode GoLang.
 Lisensi
 
 Materi ini dibuat untuk keperluan akademik mahasiswa Universitas Telkom dan disediakan secara bebas untuk belajar.
-© 2025 [Gibran Khalilullah]
+© 2025 Gibran Khalilullah
