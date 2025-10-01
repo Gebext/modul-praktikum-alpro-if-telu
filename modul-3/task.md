@@ -29,19 +29,6 @@ Rumus kebalikan untuk mencari \(x\) dari \(f(x)\):
 
 Buatlah program dalam bahasa **Go** untuk menghitung **volume** dan **luas permukaan (kulit)** bola berdasarkan jari-jari.
 
-Rumus:
-
-- **Volume bola**:  
-  \[
-  V = \frac{4}{3} \pi r^3
-  \]
-- **Luas permukaan bola**:  
-  \[
-  A = 4 \pi r^2
-  \]
-
-Gunakan \(\pi \approx 3.1415926535\).
-
 - **Input**: Bilangan bulat (jari-jari bola)
 - **Output**: Volume dan luas permukaan bola (bilangan desimal)
 
@@ -83,21 +70,6 @@ Buatlah program dalam bahasa **Go** untuk mengubah temperatur dari **Celsius** k
 - Reamur (°R)
 - Fahrenheit (°F)
 - Kelvin (K)
-
-### Rumus Konversi
-
-- Fahrenheit:  
-  \[
-  F = C \times \frac{9}{5} + 32
-  \]
-- Reamur:  
-  \[
-  R = C \times \frac{4}{5}
-  \]
-- Kelvin:  
-  \[
-  K = C + 273
-  \]
 
 - **Input**: Bilangan riil (temperatur dalam Celsius)
 - **Output**: Temperatur dalam Reamur, Fahrenheit, dan Kelvin
