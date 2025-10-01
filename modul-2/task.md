@@ -82,7 +82,7 @@ IFX-48-12
 Perkenalkan saya adalah Yura, salah satu mahasiswa Prodi S1-IF dari kelas IFX-48-12 dengan NIM 1324234545.
 ```
 
-### 🔹 Soal 3 — Luas Lingkaran
+### 3️⃣ Luas Lingkaran
 
 Sebuah program digunakan untuk menghitung **luas lingkaran** berdasarkan panjang **jari-jari**.
 
@@ -114,7 +114,7 @@ Contoh Keluaran:
 
 ```
 
-### 🔹 Soal 4 — Konversi Suhu Fahrenheit ke Celcius
+### 4️⃣ Konversi Suhu Fahrenheit ke Celcius
 
 Sebuah program digunakan untuk melakukan **konversi suhu** dari **Fahrenheit (F)** ke **Celcius (C)**  
 dengan persamaan sebagai berikut:
