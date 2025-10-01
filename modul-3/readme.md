@@ -32,26 +32,31 @@ func main() {
 }
 ```
 
-#### Operator Modulo
+#### ➗ Operator Modulo
 
-Modulo (atau mod) adalah operasi untuk mencari sisa pembagian pada integer division.
+**Modulo (atau `mod`)** adalah operasi untuk mencari **sisa pembagian** pada _integer division_.
 
-Contoh:
+---
 
-10 mod 3 = 1
+### ✨ Contoh Perhitungan
 
-Contoh kode Go:
+> - `10 mod 3 = 1`
+
+---
+
+### 💻 Contoh Kode Go
 
 ```go
 package main
 import "fmt"
 
 func main() {
-var bil_1 int = 10
-var bil_2 int = 3
-var hasil = bil_1 % bil_2
-fmt.Println(hasil) // output: 1
+    var bil_1 int = 10
+    var bil_2 int = 3
+    var hasil = bil_1 % bil_2
+    fmt.Println(hasil) // output: 1
 }
+
 ```
 
 ## 🔎 Contoh Penerapan: Mencari Digit Bilangan
