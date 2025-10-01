@@ -166,9 +166,9 @@ Integer Division & Modulo: untuk pembagian integer dan mencari sisa.
 Casting: untuk konversi antar tipe data, misalnya float → int, string ↔ int.
 ```
 
-# Modul 3.3 – Contoh Soal: Menghitung Volume Kubus
+# Modul 3.3 – Contoh Soal:
 
-## Deskripsi Soal
+## Menghitung Volume Kubus
 
 Buatlah program dalam bahasa **Go** untuk menghitung **volume kubus** berdasarkan panjang sisinya.
 
@@ -201,9 +201,7 @@ func main() {
 }
 ```
 
-# Modul 3.3 – Contoh Soal: Menghitung Luas Segitiga
-
-## Deskripsi Soal
+## Menghitung Luas Segitiga
 
 Buatlah program dalam bahasa **Go** untuk menghitung **luas segitiga** berdasarkan panjang alas dan tinggi.
 
@@ -239,9 +237,7 @@ func main() {
 }
 ```
 
-# Modul 3.3 – Contoh Soal: Konversi Mata Uang (IDR → USD)
-
-## Deskripsi Soal
+## Konversi Mata Uang (IDR → USD)
 
 Buatlah program dalam bahasa **Go** untuk menghitung konversi mata uang dari **IDR ke Dolar US**.
 
