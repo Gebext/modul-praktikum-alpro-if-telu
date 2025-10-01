@@ -32,7 +32,7 @@ func main() {
 }
 ```
 
-Operator Modulo
+#### Operator Modulo
 
 Modulo (atau mod) adalah operasi untuk mencari sisa pembagian pada integer division.
 
@@ -54,21 +54,34 @@ fmt.Println(hasil) // output: 1
 }
 ```
 
-Contoh penerapan: mencari digit bilangan
+## 🔎 Contoh Penerapan: Mencari Digit Bilangan
 
-Setiap bilangan jika di-modulus dengan 10 → menghasilkan digit terakhir.
+Setiap bilangan jika **di-modulus dengan 10** → akan menghasilkan **digit terakhir**.
 
-1234 mod 10 = 4
+> ✨ **Contoh:**
+>
+> - `1234 mod 10 = 4`
+> - `5677 mod 10 = 7`
 
-5677 mod 10 = 7
+---
 
-Jika dibagi 10 (div), digit terakhir akan hilang:
+Jika **dibagi 10 (div)** → digit terakhir akan **hilang**.
 
-1234 div 10 = 123
+> ✨ **Contoh:**
+>
+> - `1234 div 10 = 123`
+> - `5677 div 10 = 567`
 
-5677 div 10 = 567
+---
 
-Contoh: X = 2357
+### 📊 Studi Kasus: X = 2357
+
+| Digit ke- | Operasi             | Hasil | Keterangan                       |
+| --------- | ------------------- | ----- | -------------------------------- |
+| 1         | (X div 1000) mod 10 | 2     | `2357 div 1000 = 2`              |
+| 2         | (X div 100) mod 10  | 3     | `2357 div 100 = 23 → mod 10 = 3` |
+| 3         | (X div 10) mod 10   | 5     | `2357 div 10 = 235 → mod 10 = 5` |
+| 4         | (X div 1) mod 10    | 7     | `2357 div 1 = 2357 → mod 10 = 7` |
 
 ---
 
