@@ -159,9 +159,120 @@ func main() {
 
 ```
 
-Ringkasan
+## Ringkasan
 
 ```plaintext
 Integer Division & Modulo: untuk pembagian integer dan mencari sisa.
 Casting: untuk konversi antar tipe data, misalnya float → int, string ↔ int.
+```
+
+# Modul 3.3 – Contoh Soal: Menghitung Volume Kubus
+
+## Deskripsi Soal
+
+Buatlah program dalam bahasa **Go** untuk menghitung **volume kubus** berdasarkan panjang sisinya.
+
+- **Input**: Suatu bilangan bulat positif yang menyatakan panjang sisi kubus.
+- **Output**: Sebuah bilangan yang menyatakan volume kubus.
+
+### Contoh Masukan dan Keluaran
+
+| No  | Masukan | Keluaran |
+| --- | ------- | -------- |
+| 1   | 3       | 27       |
+| 2   | 4       | 64       |
+| 3   | 5       | 125      |
+
+---
+
+## Jawaban (Kode Go)
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    var sisi, volume float64
+    fmt.Print("Masukkan panjang sisi kubus: ")
+    fmt.Scan(&sisi)
+    volume = sisi * sisi * sisi
+    fmt.Println("Volume kubus:", volume)
+}
+```
+
+# Modul 3.3 – Contoh Soal: Menghitung Luas Segitiga
+
+## Deskripsi Soal
+
+Buatlah program dalam bahasa **Go** untuk menghitung **luas segitiga** berdasarkan panjang alas dan tinggi.
+
+- **Input**: Dua bilangan bulat positif yang menyatakan panjang alas dan tinggi segitiga.
+- **Output**: Sebuah bilangan yang menyatakan luas segitiga.
+
+### Contoh Masukan dan Keluaran
+
+| No  | Masukan | Keluaran |
+| --- | ------- | -------- |
+| 1   | 8 5     | 20       |
+| 2   | 6 7     | 21       |
+| 3   | 12 15   | 90       |
+
+---
+
+## Jawaban (Kode Go)
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    var alas, tinggi float64
+    fmt.Print("Masukkan panjang alas: ")
+    fmt.Scan(&alas)
+    fmt.Print("Masukkan tinggi: ")
+    fmt.Scan(&tinggi)
+
+    luas := 0.5 * alas * tinggi
+    fmt.Println("Luas segitiga:", luas)
+}
+```
+
+# Modul 3.3 – Contoh Soal: Konversi Mata Uang (IDR → USD)
+
+## Deskripsi Soal
+
+Buatlah program dalam bahasa **Go** untuk menghitung konversi mata uang dari **IDR ke Dolar US**.
+
+- **Kurs**: 15,000 IDR / USD
+- **Input**: Bilangan bulat yang menyatakan jumlah uang dalam IDR.
+- **Output**: Bilangan bulat yang menyatakan jumlah uang dalam USD.
+
+### Contoh Masukan dan Keluaran
+
+| No  | Masukan | Keluaran |
+| --- | ------- | -------- |
+| 1   | 15000   | 1        |
+| 2   | 75000   | 5        |
+| 3   | 300000  | 20       |
+
+---
+
+## Jawaban (Kode Go)
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    var rupiah, dolar int
+    fmt.Print("Masukkan jumlah uang dalam IDR: ")
+    fmt.Scan(&rupiah)
+
+    dolar = rupiah / 15000
+    fmt.Println("Jumlah dalam USD:", dolar)
+}
+
 ```
