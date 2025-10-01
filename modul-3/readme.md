@@ -101,8 +101,10 @@ Jika **dibagi 10 (div)** → digit terakhir akan **hilang**.
 
 ## 3.2 Casting atau Konversi Tipe Data
 
-Di bahasa Go, tipe data bersifat statis → tipe data variabel tidak bisa diubah saat program berjalan.
-Namun, kita bisa menggunakan casting untuk mengubah tipe data.
+Di bahasa **Go**, tipe data bersifat **statis** → tipe data variabel tidak bisa diubah saat program berjalan.  
+Namun, kita bisa menggunakan **casting** untuk mengubah tipe data tertentu.
+
+### 🔹 Contoh Casting Float → Int
 
 ```go
 package main
@@ -115,15 +117,15 @@ func main() {
 }
 ```
 
-Format casting di Go:
+### 🔹 Format casting di Go:
 
 ```java
 var var_name data_type = data_type(value)
 ```
 
-Casting string ↔ int dengan strconv
+### 🔹 Casting string ↔ int dengan strconv
 
-1. String → Integer
+### 1️⃣ String → Integer
 
 ```go package main
 import (
@@ -140,7 +142,7 @@ func main() {
 }
 ```
 
-2. Integer → String
+### 2️⃣ Integer → String
 
 ```go
 package main
