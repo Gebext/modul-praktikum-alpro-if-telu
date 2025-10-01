@@ -64,8 +64,8 @@ IF-48-GAB
 
 #### 📝 Keluaran
 
-```Perkenalkan saya adalah Bima, salah satu mahasiswa Prodi S1-IF dari kelas IF-48-GAB dengan NIM 1124431414.
-
+```plaintext
+Perkenalkan saya adalah Bima, salah satu mahasiswa Prodi S1-IF dari kelas IF-48-GAB dengan NIM 1124431414.
 ```
 
 #### 📝 Masukan
@@ -78,6 +78,6 @@ IFX-48-12
 
 #### 📝 Keluaran
 
-```Perkenalkan saya adalah Yura, salah satu mahasiswa Prodi S1-IF dari kelas IFX-48-12 dengan NIM 1324234545.
-
+```plaintext
+Perkenalkan saya adalah Yura, salah satu mahasiswa Prodi S1-IF dari kelas IFX-48-12 dengan NIM 1324234545.
 ```
