@@ -39,7 +39,7 @@ Satu bilangan bulat yang menyatakan total biaya seluruh barang.
 
 | No  | Masukan                                | Keluaran |
 | --- | -------------------------------------- | -------- |
-| 1   | 3 <br> 10000 2 <br> 5000 4 <br> 2000 1 | 34000    |
+| 1   | 3 <br> 10000 2 <br> 5000 4 <br> 2000 1 | 42000    |
 | 2   | 2 <br> 15000 1 <br> 7500 3             | 37500    |
 
 💡 _Petunjuk:_ hasil tiap baris = harga_satuan × jumlah_unit, lalu dijumlahkan menggunakan for-loop.
