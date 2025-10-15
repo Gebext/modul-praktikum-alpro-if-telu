@@ -58,6 +58,28 @@ Perulangan dengan for-loop digunakan untuk mengeksekusi instruksi sebanyak n kal
 Gunakan tanda titik koma ; untuk memisahkan inisialisasi, kondisi, dan update.
 Gunakan indentasi (tab atau 4 spasi) agar bagian kode mudah dibaca.
 
+### 🔹 Penggunaan For Loop
+
+```go
+for i := 1; i <= 5; i++ {
+    fmt.Println("Iterasi ke-", i)
+}
+```
+
+### 📖 Penjelasan Per Iterasi:
+
+| Iterasi | Nilai `i` | Kondisi `i <= 5` | Aksi yang Dilakukan   |
+| ------- | --------- | ---------------- | --------------------- |
+| 1       | 1         | ✅ True          | Cetak “Iterasi ke- 1” |
+| 2       | 2         | ✅ True          | Cetak “Iterasi ke- 2” |
+| 3       | 3         | ✅ True          | Cetak “Iterasi ke- 3” |
+| 4       | 4         | ✅ True          | Cetak “Iterasi ke- 4” |
+| 5       | 5         | ✅ True          | Cetak “Iterasi ke- 5” |
+| 6       | 6         | ❌ False         | Perulangan berhenti   |
+
+💬 Kesimpulan:
+Loop berjalan selama kondisi i <= 5 bernilai benar. Setelah i bertambah menjadi 6, loop berhenti.
+
 ## 📘 5.3 Implementasi For-Loop
 
 Contoh program menampilkan teks "CAK1BAB3 Algoritma Pemrograman 1" sebanyak 1000 kali:
@@ -79,7 +101,42 @@ n = 1000
 }
 ```
 
-### 5.4 Contoh Soal dan Pembahasan
+### 🔹Nested Loop
+
+Loop di dalam loop digunakan untuk membentuk pola dua dimensi atau kombinasi data.
+
+```go
+for i := 1; i <= 3; i++ {
+    for j := 1; j <= 3; j++ {
+        fmt.Print("* ")
+    }
+    fmt.Println()
+}
+```
+
+#### 📖 Penjelasan Per Iterasi:
+
+| Iterasi `i` | Iterasi `j` | Output Baris |
+| ----------- | ----------- | ------------ |
+| 1           | 1–3         | `* * *`      |
+| 2           | 1–3         | `* * *`      |
+| 3           | 1–3         | `* * *`      |
+
+#### 💬 Kesimpulan:
+
+Loop luar (i) mengontrol jumlah baris.
+
+Loop dalam (j) mengontrol jumlah kolom di setiap baris.
+
+**Output:**
+
+```plaintext
+* * *
+* * *
+* * *
+```
+
+## 5.4 Contoh Soal dan Pembahasan
 
 #### 🧩 Soal 1
 
