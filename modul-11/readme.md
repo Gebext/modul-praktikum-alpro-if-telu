@@ -93,7 +93,7 @@ Berikut representasi alur eksekusi switch-case:
 
 - End → Mengakhiri eksekusi switch.
 
-Kelebihan Switch Case Dibanding If-Else
+**Kelebihan Switch Case Dibanding If-Else**
 
 1. Lebih mudah dibaca
    Cocok untuk banyak kondisi dengan nilai tetap, sehingga kode lebih rapi daripada menulis banyak if-else.
