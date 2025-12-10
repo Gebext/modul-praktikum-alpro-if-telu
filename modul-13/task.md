@@ -77,9 +77,17 @@ Jika saldo menjadi negatif, program berhenti dan mencetak:
 50
 ```
 
-**Proses**
+**Proses Perhitungan**
 
-Saldo menjadi 100 saat transaksi -800 → berhenti
+| Transaksi | Saldo Sebelum | Saldo Sesudah | Status |
+| --------- | ------------- | ------------- | ------ |
+| Awal      | –             | 1000          | ✅     |
+| 200       | 1000          | 1200          | ✅     |
+| -300      | 1200          | 900           | ✅     |
+| -800      | 900           | 100           | ✅     |
+| 50        | 100           | 150           | ✅     |
+
+_💡 Jika misalnya ada transaksi -200, saldo menjadi -100, maka transaksi tersebut tidak diproses, dan program berhenti._
 
 **Contoh Output**
 
