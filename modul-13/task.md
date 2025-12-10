@@ -45,55 +45,22 @@ Setelah loop berhenti, tampilkan:
 
 **Deskripsi**
 
-Sebuah rekening memiliki saldo awal S.
-Setiap input berikutnya merupakan transaksi:
+Buatlah program yang digunakan untuk menghitung banyaknya digit dari suatu
+bilangan
 
-- Positif → setoran
+**Masukan** berupa bilangan bulat positif.
 
-- Negatif → penarikan
+**Keluaran** berupa bilangan bulat yang menyatakan banyaknya digit dari bilangan yang
+diberikan pada masukan
 
-Program terus menerima transaksi selama saldo tidak negatif.
-Jika saldo menjadi negatif, program berhenti dan mencetak:
+**Contoh masukkan dan keluaran**
 
-- Saldo terakhir sebelum minus
-
-- Jumlah transaksi yang berhasil diproses
-
-**Aturan**
-
-- Saldo awal diinput pertama
-
-- Gunakan while-loop
-
-- Transaksi yang membuat saldo negatif tidak dihitung
-
-**Contoh Input**
-
-```diff
-1000
-200
--300
--800
-50
-```
-
-**Proses Perhitungan**
-
-| Transaksi | Saldo Sebelum | Saldo Sesudah | Status |
-| --------- | ------------- | ------------- | ------ |
-| Awal      | –             | 1000          | ✅     |
-| 200       | 1000          | 1200          | ✅     |
-| -300      | 1200          | 900           | ✅     |
-| -800      | 900           | 100           | ✅     |
-| 50        | 100           | 150           | ✅     |
-
-_💡 Jika misalnya ada transaksi -200, saldo menjadi -100, maka transaksi tersebut tidak diproses, dan program berhenti._
-
-**Contoh Output**
-
-```diff
-900 2
-```
+| No  | Masukan | Keluaran |
+| --- | ------- | -------- |
+| 1   | 5       | 1        |
+| 2   | 234     | 3        |
+| 3   | 78787   | 5        |
+| 4   | 1894256 | 7        |
 
 ## Soal 3 — Aproksimasi Akar Kuadrat (Formula Matematis)
 
